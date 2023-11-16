@@ -1,20 +1,20 @@
 # inference_app.py
-
+!pip install joblib
 import streamlit as st
 import pandas as pd
 import joblib
 
 # Load the pre-trained XGBoost model
 # Replace 'your_model_filename.joblib' with the actual filename of your saved model
-model = joblib.load("C:/Users/himsh/OneDrive/Documents/GitHub/Rate_My_Resume/model.joblib")
+model = joblib.load("https://github.com/himanshu1698/Rate_My_Resume/raw/main/model.joblib")
 
 # Streamlit app
 st.title("Salary Prediction App")
 
-df = pd.read_csv("C:/Users/himsh/OneDrive/Documents/GitHub/Rate_My_Resume/data.csv")
+df = pd.read_csv("https://github.com/himanshu1698/Rate_My_Resume/raw/main/data.csv")
 
 
-df1 = pd.read_csv("C:/Users/himsh/OneDrive/Documents/GitHub/Rate_My_Resume/1.csv")
+df1 = pd.read_csv("https://github.com/himanshu1698/Rate_My_Resume/raw/main/1.csv")
 
 # Sidebar with input features
 st.sidebar.header("Enter Job Details:")
