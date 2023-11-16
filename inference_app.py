@@ -1,5 +1,5 @@
 # inference_app.py
-pip install joblib
+!pip install joblib
 import streamlit as st
 import pandas as pd
 import joblib
